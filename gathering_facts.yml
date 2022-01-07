@@ -1,0 +1,12 @@
+---
+ -hosts:  172.31.45.45
+  become: yes
+  gather_facts: yes
+  tasks: 
+  -name: i want to install git
+   apt: 
+    name: git
+    state: present
+    when: ansible_os_family == "Debian"
+
+

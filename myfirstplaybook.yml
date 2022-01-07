@@ -1,0 +1,9 @@
+---
+-myfood:
+  -breakfast: dosa
+  lunch: biryani
+  dinner: mushroom
+-mylifestyle: 
+     -dress: ethnic
+     -jeans: casual
+     
