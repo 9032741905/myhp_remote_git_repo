@@ -3,6 +3,6 @@
 172.31.18.140
 [mylinux_servers]
 172.31.2.12
-myubuntu_servers
-mywebpacakageonubuntu = apache2
-mywebpacakageonRedHat = httpd
+[myubuntu_servers:vars]
+mywebpacakageonubuntu= apache2
+mywebpacakageonRedHat= httpd
