@@ -1,16 +1,17 @@
 ---
-- hosts: myubuntu_servers
+- hosts: all
   become: yes
   tasks: 
     - name: i want to install apache
       apt: 
        name: "{{mywebpacakageonubuntu}}"
        state: present
-       when: ansible_os_family =="Debian"
+      when: ansible_os_family =="Debian"
     - name: i want to start instance
       service: 
        name: "{{mywebpacakageonubuntu}}"
        state: started
+      when: ansible_os_family =="Debian" 
     - name: i want to install httpd
       apt: 
        name: "{{mywebpacakageonRedHat}}"
