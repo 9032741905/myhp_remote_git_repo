@@ -4,21 +4,21 @@
   tasks: 
     - name: i want to install apache
       apt: 
-       name: "{{mywebpacakageonubuntu}}"
+       name: apache2
        state: present
       when: ansible_os_family =="Debian"
     - name: i want to start instance
       service: 
-       name: "{{mywebpacakageonubuntu}}"
+       name: apache2
        state: started
       when: ansible_os_family =="Debian" 
     - name: i want to install httpd
       apt: 
-       name: "{{mywebpacakageonRedHat}}"
+       name: httpd
        state: present
       when: ansible_os_family =="RedHat"
     - name: i want to start instance
       service: 
-       name: "{{mywebpacakageonRedHat}}"
+       name: httpd
        state: started
       when: ansible_os_family =="RedHat"
