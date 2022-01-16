@@ -3,6 +3,6 @@
    become: yes
    tasks: 
     - name: i want to create a file
-      file: jyo
-      path: /home/ubuntu/testfile
-      state: touch
+      file: 
+         path: /home/ubuntu/testfile
+         state: touch
