@@ -6,4 +6,5 @@
      command: hostname-f
      register: result
    - name: i want to display result
-     msg: "{{result}}}"
+     debug:
+       msg: "{{result}}}"
