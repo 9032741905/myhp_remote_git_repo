@@ -1,16 +1,19 @@
 ---
-- hosts: all
+- hosts: 172.31.15.225
   become: yes
   tasks: 
   - name: i want to install git
     apt:
       name: git
       state: present 
+    tags: gittag
   - name: i want to install tree
     apt:
       name: tree
       state: present
+    tags: tree tag
   - name: i want to install wget
     apt:
       name: wget
       state: present
+    tags: wget tag
