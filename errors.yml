@@ -10,10 +10,11 @@
   - name: i want to install tree
     apt:
       name: tree
-      stateeeee: present
+      state: present
     ignore_errors: True
   - name: i want to install wget
     apt:
-      name: wget
+      nameddddd: wget
       state: present
+    ignore_errors: True
     tags: wget tag
