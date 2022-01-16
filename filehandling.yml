@@ -6,3 +6,8 @@
       file: 
          path: /home/ubuntu/testfile
          state: touch
+      tags: create file tag
+    - name: i want to copy index file into ansible node 
+      template: 
+         src: index.j2
+         dest: /var/www/html/index.html
