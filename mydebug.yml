@@ -3,7 +3,7 @@
   become: yes
   tasks: 
    - name: i want to executed commands
-     command: hostname-f
+     command: hostname -f
      register: result
    - name: i want to display result
      debug:
