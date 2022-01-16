@@ -1,0 +1,9 @@
+---
+- hosts: 172.31.15.225
+  become: yes
+  tasks: 
+   - name: i want to executed commands
+     command: hostname-f
+     register: result
+   - name: i want to display result
+     msg: "{{result}}}"
