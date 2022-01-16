@@ -1,0 +1,12 @@
+---
+- hosts: 172.31.15.225
+  become: yes
+  tasks: 
+   -  name: i want to install 3 apps
+      apt:
+        name: "{{item}}"
+        state: present
+      loops: 
+      - git
+      - tree
+      - apache2
